@@ -136,6 +136,7 @@ export KERNEL_BUILD_PATH=${KERNEL_BUILD_PATH:-"${SCRATCHDIR}/kernels"}
 export MAKEOBJDIRPREFIX=${MAKEOBJDIRPREFIX:-"${SCRATCHDIR}/obj"}
 
 export MODULES_OVERRIDE=${MODULES_OVERRIDE:-"aesni amdtemp amdsmn coretemp cryptodev cpuctl drm2 fdescfs dummynet hwpmc i2c if_stf ipdivert ipfw ipmi ix ixv ndis nmdm opensolaris sfxge vmm zfs"}
+export MODULES_OVERRIDE_aarch64=${MODULES_OVERRIDE_aarch64:-"cryptodev hwpmc i2c if_stf ipdivert ipfw dummynet fdescfs opensolaris zfs"
 
 # gnid
 export GNID_REPO_BASE=${GNID_REPO_BASE:-"${GIT_REPO_BASE}/gnid.git"}
